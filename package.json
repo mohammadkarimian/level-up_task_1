@@ -1,0 +1,67 @@
+{
+  "name": "levelup-task1",
+  "version": "1.0.0",
+  "description": "",
+  "author": "mohammad karimian (https://github.com/mohammadkarimian)",
+  "main": "dist/src/app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mohammadkarimian/level-up_task_1"
+  },
+  "license": "UNLICENSED",
+  "scripts": {
+    "test:jest": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "pretest": "npm run && npm run lint && tsc --noEmit",
+    "test": "npm run test:jest --",
+    "lint": "eslint . --cache --fix --ext .ts,.tsx",
+    "install": "tsc"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.1",
+    "@types/yargs": "^15.0.2",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
+    "stylelint": "^13.0.0",
+    "stylelint-config-standard": "^19.0.0",
+    "ts-jest": "^25.1.0",
+    "typescript": "^3.7.5"
+  },
+  "bin": {
+    "levelup-task1": "./dist/src/app.js"
+  },
+  "engines": {
+    "node": ">=6.9"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/lib/",
+      "/dist/"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/request-promise-native": "^1.0.17",
+    "axios": "^0.19.2",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8",
+    "strip-markdown": "^3.1.1",
+    "tslint": "^6.0.0",
+    "yargs": "^15.1.0"
+  }
+}
