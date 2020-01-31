@@ -1,6 +1,42 @@
 # level-up_task_1
 
-...
+## Local Install
+
+    npm install
+
+## Local Run
+
+    node . -b <body> -e <endpoint>
+
+## Global Install
+
+    npm install -g .
+
+## Global Run
+
+    levelup-task1 -b <body> -e <endpoint>
+
+## Global Uninstall
+
+    npm uninstall -g levelup-task1
+
+## Usage
+
+    Usage: -b <body> -e <endpoint>
+
+    Options:
+    --help          Show help
+    --version       Show version number
+    -b, --body      Request Body
+    -e, --endpoint  Your Endpoin
+
+## Example
+
+    Local:
+    node . -b "Test" -e https://jsonplaceholder.typicode.com/posts
+
+    Global:
+    levelup-task1 -b "Test" -e https://jsonplaceholder.typicode.com/posts
 
 ## Change log
 
