@@ -1,5 +1,9 @@
 # level-up_task_1
 
+A command line program that accepts the string and post it to the endpoint (e.g https://jsonplaceholder.typicode.com/)
+        - The string can contain markdown/html and you have to sanitize it  
+        - The string can contain Invalid character (e.g !@#$%^&*) and you have to sanitize it
+
 ## Local Install
 
     npm install
