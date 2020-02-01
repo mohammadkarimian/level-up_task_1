@@ -12,6 +12,10 @@ A command line program that accepts the string and post it to the endpoint (e.g 
 
     node . -b <body> -e <endpoint>
 
+## Test
+
+    npm test
+
 ## Global Install
 
     npm install -g .
