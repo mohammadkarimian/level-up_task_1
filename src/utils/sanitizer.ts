@@ -1,5 +1,5 @@
-const remark = require("remark");
-const stripMarkdown = require("strip-markdown");
+import remark = require("remark");
+import stripMarkdown = require("strip-markdown");
 
 class Sanitizer {
     removeMarkdown(text: string) {
