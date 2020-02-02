@@ -16,8 +16,9 @@ class Application {
 	}
 
 	start() {
+		let body: string = this.sanitizer.sanitize(this.cli.getBody())
 		this.httpClient.post(
-			this.sanitizer.sanitize(this.cli.getBody()),
+			body,
 			this.cli.getEndpoint()
 		).then(response => console.log(response))
 			.catch(error => console.log(error))
