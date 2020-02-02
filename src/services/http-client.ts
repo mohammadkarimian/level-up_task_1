@@ -1,10 +1,10 @@
 import request = require("request-promise-native");
 
 class HttpClient {
-    async post(body: string, url: string) {
+    async post(body: string, endpoint: string) {
         return request({
             method: "POST",
-            url: url,
+            url: endpoint,
             headers: {},
             body: body
         });
